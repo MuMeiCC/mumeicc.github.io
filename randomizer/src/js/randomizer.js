@@ -5,6 +5,7 @@ let N = 0;
 ids = document.getElementById("IDs");
 randButton = document.getElementById("rand");
 delButton = document.getElementById("del");
+clearButton = document.getElementById("clear")
 result = document.getElementById("results");
 
 function outputStr() {
@@ -43,4 +44,12 @@ randButton.onclick = function rand() {
         N -= 1;
         result.innerHTML = outputStr();
     }
+}
+
+clearButton.onclick = function clear() {
+    while (awarded.length > 0) {
+        idList.push(awarded.pop());
+        N += 1;
+    }
+    result.innerHTML = outputStr();
 }
