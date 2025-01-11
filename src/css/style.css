@@ -1,0 +1,81 @@
+/* Import custom font */
+@font-face {
+    font-family: 'FZFWZZTJW';
+    src: url('../fonts/FZFWZZTJW.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'TrueLineG';
+    src: url('../fonts/TrueLineG-Medium.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: rgba(0, 0, 0, 0.3) url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    font-family: Trajan Pro, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+section {
+    font-family: Garamond, serif;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 2.4em;
+    color: black;
+}
+
+footer {
+    font-family: FZFWZZTJW, sans-serif;
+    text-align: center;
+    background-color: rgba(51,51,51,0.95);
+    color: white;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
