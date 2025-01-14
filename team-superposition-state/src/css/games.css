@@ -7,6 +7,9 @@ body {
     margin: 0;
     font-family: 'FZFWZZTJW', sans-serif;
     background-color: #ffffff; /* White background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes up the full height of the viewport */
 }
 
 header {
@@ -48,57 +51,26 @@ header {
 }
 
 main {
+    flex: 1; /* Take up remaining space */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.team-info {
+.game-title {
+    font-size: 36px;
+    margin-top: 50px; /* Add space above the game title */
+}
+
+.game {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    gap: 20px;
+    width: 50%;
 }
 
-.team-large-icon {
-    width: 250px;
-    height: 250px;
-}
-
-.team-name {
-    font-size: 40px; /* Large font for team name */
-    font-style: bold;
-    margin-bottom: 20px; /* Add space between the name and description */
-}
-
-.description {
-    font-size: 18px;
+.game-description {
+    font-size: 20px;
     color: #555;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Round the image */
-    border: 4px solid #333;
-    object-fit: cover;
 }
 
 footer {
