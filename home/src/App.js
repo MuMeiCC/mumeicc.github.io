@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './assets/style/App.css';
 
 function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className={`menu-button ${isMenuOpen ? 'open':''}`} onClick={toggleMenu}>
+        <div className="menu-bar bar1"></div>
+        <div className="menu-bar bar2"></div>
+        <div className="menu-frame"></div>
+      </div>
+
+      <div className={`menu ${isMenuOpen ? 'open':''}`}>
+        <ul className="menu-list">
+          <li className="menu-item active">Top</li>
+          <li className="menu-item">About</li>
+          <li className="menu-item">Portfolio</li>
+          <li className="menu-item">Skills</li>
+          <li className="menu-item">Blog</li>
+          <li className="menu-item">Contact</li>
+        </ul>
+      </div>
+
     </div>
   );
 }

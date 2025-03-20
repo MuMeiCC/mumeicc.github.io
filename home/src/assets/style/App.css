@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Accia Piano';
+  src: url(../fonts/AcciaPiano-Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Accia Piano';
+  src: url(../fonts/AcciaPiano-Bold.woff2) format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Accia Piano';
+  src: url(../fonts/AcciaPiano-Italic.woff2) format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Accia Piano';
+  src: url(../fonts/AcciaPiano-Light.woff2) format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  z-index: 100;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.menu-frame {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/menu_frame.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.menu-button.open .menu-frame {
+  opacity: 0;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 1px;
+  background-color: #f3f3f3;
+  transition: all 0.5s;
+}
+
+.menu-bar.bar1 {
+  top: 45%;
+}
+
+.menu-bar.bar2 {
+  top: 55%;
+}
+
+.menu-button.open .menu-bar.bar1 {
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  transform: rotate(-30deg);
+  opacity: 0.7;
+}
+
+.menu-button.open .menu-bar.bar2 {
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  transform: rotate(30deg);
+  opacity: 0.7;
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: rgba(90, 85, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu-list {
+  height: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item {
+  font-family: 'Accia Piano';
+  font-size: 1.5rem;
+  color: #f3f3f3;
+  letter-spacing: 0.3rem;
+  margin-top: 5vh;
+}
