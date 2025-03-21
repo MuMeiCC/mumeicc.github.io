@@ -1,0 +1,13 @@
+@import url(fonts.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url('../assets/img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
+}
