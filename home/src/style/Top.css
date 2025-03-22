@@ -1,0 +1,121 @@
+@import url(fonts.css);
+
+@keyframes sweep {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomout {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    transform: rotate(45deg);
+  }
+  90% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: rotate(-2deg);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes open {
+  0% {
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.Top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.id {
+  font-family: 'Worstveld Sling';
+  font-size: 2.5em;
+  font-style: italic;
+  color: #0c0c0c;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.id.hidden {
+  opacity: 0;
+}
+
+.id.visible {
+  opacity: 1;
+  animation: sweep 1s ease-out forwards;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  opacity: 1;
+  overflow: hidden;
+  margin-bottom: 20px;
+  filter: brightness(90%) drop-shadow(-5px -5px 10px rgba(255, 255, 255, 0.2)) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+  background-image: url('../assets/img/avatar.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.hidden {
+  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+
+.avatar.visible {
+  animation: zoomout 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.descriptions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descriptions.hidden {
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+
+.descriptions.visible {
+  animation: open 1.5s ease-out forwards;
+}
+
+.job-title {
+  font-family: 'Worstveld Sling';
+  font-size: 2em;
+  font-style: italic;
+  color: #0c0c0c;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.desc-items {
+  font-family: 'Accia Piano';
+  font-size: 1.2em;
+  color: #0c0c0c;
+  text-align: center;
+  margin: 5px 0;
+}

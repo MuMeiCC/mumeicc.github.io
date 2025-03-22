@@ -2,8 +2,8 @@
 
 .menu-button {
 	position: fixed;
-	top: 20px;
-	right: 30px;
+	top: 40px;
+	right: 60px;
 	height: 60px;
 	width: 60px;
 	cursor: pointer;
@@ -18,7 +18,7 @@
 .menu-frame {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/img/menu_frame.png');
+  background-image: url('../assets/img/menu_frame_black.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
   transform: translate(-50%, -50%);
   width: 30%;
   height: 1px;
-  background-color: #f3f3f3;
+  background-color: #0c0c0c;
   transition: all 0.5s;
 }
 
@@ -48,20 +48,21 @@
   top: 55%;
 }
 
-.menu-button.open .menu-bar.bar1 {
+.menu-button.open .menu-bar {
   top: 50%;
   left: 25%;
   width: 50%;
-  transform: rotate(-30deg);
   opacity: 0.7;
+  height: 1.5px;
+  background-color: #f3f3f3;
+}
+
+.menu-button.open .menu-bar.bar1 {
+  transform: rotate(-35deg);
 }
 
 .menu-button.open .menu-bar.bar2 {
-  top: 50%;
-  left: 25%;
-  width: 50%;
-  transform: rotate(30deg);
-  opacity: 0.7;
+  transform: rotate(35deg);
 }
 
 
@@ -71,7 +72,7 @@
   right: 0;
   width: 30%;
   height: 100vh;
-  background-color: rgba(90, 85, 100);
+  background-color: rgb(133, 129, 136);
   display: flex;
   justify-content: center;
   align-items: center;
