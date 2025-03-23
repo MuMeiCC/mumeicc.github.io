@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import '../style/Top.css';
-import { NavLink } from 'react-router';
 
 const Top = () => {
 
@@ -15,7 +16,7 @@ const Top = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowFirstLine(true);
-    }, 500);
+    }, 200);
   }, []);
 
   return (
@@ -31,8 +32,8 @@ const Top = () => {
         <div className='job-title'>Software Engineer / Web Developer / Game Developer</div>
         <p className='desc-items'>Master student in Visual Computing of Simon Fraser University</p>
         <p className='desc-items'>Currently looking for a Co-op job starts in May (Summer Term)</p>
-        <p className='desc-items'>Open to any opportunities in Software Development, Web Development, Game Development, and related fields</p>
-        <p className='desc-items'>For more information, please see the <NavLink to="/about">About</NavLink> page</p>
+        <p className='desc-items'>Open to any opportunities in Software Development, Front-end Development, Game Development, and related fields</p>
+        <p className='desc-items'>For more information, please view the <NavLink to="/about" className='nav-link'>About</NavLink> page</p>
       </div>
     </div>
   )

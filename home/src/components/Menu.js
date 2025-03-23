@@ -22,8 +22,8 @@ const Menu = () => {
         <nav className="menu-list">
           <NavLink to='/' className='menu-item' activeClassName='active'>Top</NavLink>
           <NavLink to='/about' className='menu-item' activeClassName='active'>About</NavLink>
-          <NavLink to='/portfolio' className='menu-item' activeClassName='active'>Portfolio</NavLink>
           <NavLink to='/skills' className='menu-item' activeClassName='active'>Skills</NavLink>
+          <NavLink to='/portfolio' className='menu-item' activeClassName='active'>Portfolio</NavLink>
           <NavLink to='/blog' className='menu-item' activeClassName='active'>Blog</NavLink>
           <NavLink to='/contact' className='menu-item' activeClassName='active'>Contact</NavLink>
         </nav>

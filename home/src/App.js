@@ -1,18 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './style/App.css';
 import Menu from './components/Menu.js';
 import Top from './pages/Top.js';
+import About from './pages/About.js';
 
 const App = () => {
+
+  const pages = [
+    { path: '/', name: 'Top', element: <Top /> },
+    { path: '/about', name: 'About', element: <About /> }
+  ]
 
   return (
     <Router>
       <div className='App'>
         <Menu />
         <Routes>
-          <Route path="/" element={<Top />} />
+          {pages.map(page => (
+            <Route path={page.path} element={page.element} />
+          ))}
         </Routes>
       </div>
     </Router>
