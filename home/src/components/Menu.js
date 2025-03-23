@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { NavLink } from 'react-router-dom';
 import '../style/Menu.css';
 
@@ -9,8 +10,8 @@ const Menu = () => {
 	setIsMenuOpen(!isMenuOpen);
   }
 
-  return (
-	<div className="menu-container">
+  return createPortal(
+    <div className="menu-container">
 
       <div className={`menu-button ${isMenuOpen ? 'open':''}`} onClick={toggleMenu}>
         <div className="menu-bar bar1"></div>
@@ -28,9 +29,9 @@ const Menu = () => {
           <NavLink to='/contact' className='menu-item' activeClassName='active'>Contact</NavLink>
         </nav>
       </div>
-
-    </div>
-  )
+    </div>,
+    document.body
+  );
 }
 
 export default Menu;

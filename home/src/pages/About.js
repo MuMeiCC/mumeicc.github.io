@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className='About'>
+    <div className='page About'>
       <h1 className={`title ${ showTitle ? 'visible':'hidden'}`} onTransitionEnd={() => setShowContent(true)}>About Me</h1>
       <div className={`content ${ showContent ? 'visible':'hidden'}`}>
         <div className="info-container">

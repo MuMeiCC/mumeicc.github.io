@@ -1,0 +1,24 @@
+@import url(fonts.css);
+
+.skill-list {
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+
+.skill-list > h2 {
+  font-family: 'Trajan Pro';
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  left: 20%;
+}
+
+.skill-list li {
+  /* font-family: 'Fangzheng FW Pearl'; */
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #0c0c0c;
+  list-style: none;
+}

@@ -1,5 +1,44 @@
 @import url(fonts.css);
 
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Worstveld Sling';
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  opacity: 0.5;
+  clip-path: inset(0 100% 0 0);
+  transition: all 0.5s ease-in-out;
+  color: #0c0c0c;
+}
+
+.title.visible {
+  opacity: 1;
+  clip-path: inset(0 -10% 0 0);
+}
+
+.content {
+  font-family: 'Accia Piano';
+  width: 80%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+  padding-bottom: 10vh;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .App {
   margin: 0;
   padding: 0;

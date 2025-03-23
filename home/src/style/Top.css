@@ -49,7 +49,7 @@
   color: #0c0c0c;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   letter-spacing: 0.1em;
   margin-bottom: 5px;
 }
@@ -107,7 +107,7 @@
   color: #0c0c0c;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   letter-spacing: 0.1em;
   margin-bottom: 5px;
 }

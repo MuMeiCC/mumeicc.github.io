@@ -53,3 +53,10 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Fangzheng FW Pearl';
+	src: url(../assets/fonts/FZFWZZTJW.TTF) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
