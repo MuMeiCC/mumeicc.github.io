@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.04562a82.css",
+    "main.js": "/home/static/js/main.bc4dd529.js",
+    "static/js/453.4b8d8fd0.chunk.js": "/home/static/js/453.4b8d8fd0.chunk.js",
+    "static/media/FZFWZZTJW.TTF": "/home/static/media/FZFWZZTJW.fe132ba119e27a3e7737.TTF",
+    "static/media/avatar.png": "/home/static/media/avatar.532b0dc97881de5c2726.png",
+    "static/media/paper.jpg": "/home/static/media/paper.29c3195b99f54f27df9f.jpg",
+    "static/media/TrajanPro-Regular.ttf": "/home/static/media/TrajanPro-Regular.5e3d3ff4f80f0875f849.ttf",
+    "static/media/TrajanPro-Bold.otf": "/home/static/media/TrajanPro-Bold.3f14e0ffe7b54e407289.otf",
+    "static/media/WorstveldSlingOblique.ttf": "/home/static/media/WorstveldSlingOblique.1c38980d34fbbff952b5.ttf",
+    "static/media/WorstveldSling.ttf": "/home/static/media/WorstveldSling.080d8a40be222c38221f.ttf",
+    "static/media/AcciaPiano-Italic.woff2": "/home/static/media/AcciaPiano-Italic.dbd703eebc3f4ff97e15.woff2",
+    "static/media/AcciaPiano-Regular.woff2": "/home/static/media/AcciaPiano-Regular.c70991da3c1742026a77.woff2",
+    "static/media/AcciaPiano-Bold.woff2": "/home/static/media/AcciaPiano-Bold.271a149e61180ce22cdc.woff2",
+    "static/media/AcciaPiano-Light.woff2": "/home/static/media/AcciaPiano-Light.daefee94046d493cae4a.woff2",
+    "index.html": "/home/index.html",
+    "main.04562a82.css.map": "/home/static/css/main.04562a82.css.map",
+    "main.bc4dd529.js.map": "/home/static/js/main.bc4dd529.js.map",
+    "453.4b8d8fd0.chunk.js.map": "/home/static/js/453.4b8d8fd0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04562a82.css",
+    "static/js/main.bc4dd529.js"
+  ]
+}
