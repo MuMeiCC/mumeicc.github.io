@@ -33,7 +33,7 @@ const Top = () => {
         <p className='desc-items'>Master student in Visual Computing of Simon Fraser University</p>
         <p className='desc-items'>Currently looking for a Co-op job starts in May (Summer Term)</p>
         <p className='desc-items'>Open to any opportunities in Software Development, Front-end Development, Game Development, and related fields</p>
-        <p className='desc-items'>For more information, please view the <NavLink to="/about" className='nav-link'>About</NavLink> page</p>
+        <p className='desc-items'>For more information, please view the <NavLink to="/about" className='link'>About</NavLink> page</p>
       </div>
     </div>
   )

@@ -42,7 +42,7 @@ const About = () => {
             <p>As a chess player, I play Chess and Shogi. </p>
           </div>
         </div>
-        <p className="navi">For more information about my skills and experience, please go to <NavLink to="/skills" className='nav-link'>Skills</NavLink> and <NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink> pages.</p>
+        <p className="navi">For more information about my skills and experience, please go to <NavLink to="/skills" className='link'>Skills</NavLink> and <NavLink to="/portfolio" className='link'>Portfolio</NavLink> pages.</p>
       </div>
     </div>
   )

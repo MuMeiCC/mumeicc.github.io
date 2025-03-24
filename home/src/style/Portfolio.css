@@ -1,0 +1,21 @@
+@import url(fonts.css);
+
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.proj-img {
+  width: 25vw;
+  height: auto;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+  object-fit: cover;
+}
+
+.proj-description {
+  width: 30vw;
+  font-size: 1.2em;
+  color: #0c0c0c;
+}

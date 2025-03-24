@@ -17,6 +17,7 @@
   opacity: 0.5;
   clip-path: inset(0 100% 0 0);
   transition: all 0.5s ease-in-out;
+  overflow: visible;
   color: #0c0c0c;
 }
 
@@ -52,17 +53,33 @@
   filter: brightness(90%);
 }
 
-.nav-link {
+.link {
   color: #3b82f6;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s;
 }
 
-.nav-link:hover {
+.link:hover {
   text-shadow: 0 0 5px #ffdf8f;
 }
 
-.nav-link:visited {
+.link:visited {
   color: #8b5cf6;
 }
+
+.content-list {
+  margin: 0 15%;
+  margin-bottom: 3%;
+}
+
+.content-list > h2 {
+  font-family: 'Trajan Pro';
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  left: 20%;
+}
+

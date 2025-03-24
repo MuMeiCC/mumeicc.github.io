@@ -17,7 +17,7 @@ const Skills = () => {
     <div className="page Skills">
       <h1 className={`title ${ showTitle ? 'visible':'hidden'}`} onTransitionEnd={() => setShowContent(true)}>Skills</h1>
       <div className={`content ${ showContent ? 'visible':'hidden'}`}>
-        <div className="skill-list">
+        <div className="content-list">
           <h2>Programming</h2>
           <ul>
             <li><b>C++</b>: Learning since 2017, the first year of my high school, because of a national level programming competition. Familiar with C++ development and algorithms, data structures. </li>
@@ -27,7 +27,7 @@ const Skills = () => {
             <li><b>SQL</b>: Learned in my sophomore and junior year. Had done one related project, and one internship related to database. </li>
           </ul>
         </div>
-        <div className="skill-list">
+        <div className="content-list">
           <h2>Developer Tools</h2>
           <ul>
             <li><b>Git</b>: Having multiple projects using Git and Github for version control. </li>
@@ -38,7 +38,7 @@ const Skills = () => {
             <li><b>LaTex</b>: Have experience using LaTex to write report. </li>
           </ul>
         </div>
-        <div className="skill-list">
+        <div className="content-list">
           <h2>Design</h2>
           <ul>
             <li><b>Adobe Photoshop</b>: Using Photoshop for graphic design, including title screens of my videos, and a poster of my club when I was a vice president. </li>
@@ -46,7 +46,7 @@ const Skills = () => {
             <li><b>Adobe After Effects</b>: Created visual effects for a showcase video of my club. </li>
           </ul>
         </div>
-        <div className="skill-list">
+        <div className="content-list">
           <h2>Language</h2>
           <ul>
             <li><b>Chinese (Mandarin & Southern Min)</b>: Native speaker. </li>
