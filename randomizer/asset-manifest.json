@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/randomizer/static/css/main.511aa457.css",
-    "main.js": "/randomizer/static/js/main.1767d087.js",
+    "main.css": "/randomizer/static/css/main.41c060d0.css",
+    "main.js": "/randomizer/static/js/main.9829b20c.js",
     "static/js/453.62bbbb58.chunk.js": "/randomizer/static/js/453.62bbbb58.chunk.js",
     "static/media/RoShinoStd-Bd.otf": "/randomizer/static/media/RoShinoStd-Bd.1c5dbaee91cfdebc809a.otf",
     "static/media/RoShinoStd-Md.otf": "/randomizer/static/media/RoShinoStd-Md.412d3699f25e3bad79b7.otf",
@@ -19,12 +19,12 @@
     "static/media/AcciaPiano-Bold.woff2": "/randomizer/static/media/AcciaPiano-Bold.271a149e61180ce22cdc.woff2",
     "static/media/AcciaPiano-Light.woff2": "/randomizer/static/media/AcciaPiano-Light.daefee94046d493cae4a.woff2",
     "index.html": "/randomizer/index.html",
-    "main.511aa457.css.map": "/randomizer/static/css/main.511aa457.css.map",
-    "main.1767d087.js.map": "/randomizer/static/js/main.1767d087.js.map",
+    "main.41c060d0.css.map": "/randomizer/static/css/main.41c060d0.css.map",
+    "main.9829b20c.js.map": "/randomizer/static/js/main.9829b20c.js.map",
     "453.62bbbb58.chunk.js.map": "/randomizer/static/js/453.62bbbb58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.511aa457.css",
-    "static/js/main.1767d087.js"
+    "static/css/main.41c060d0.css",
+    "static/js/main.9829b20c.js"
   ]
 }
